@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dominick Cadwell | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+</html>body { font-family: 'Roboto', sans-serif; }
+
+
+  <header>
+    <img src="profile.jpg" alt="Your Photo" class="profile-photo" />
+    <h1>Dominick Cadwell</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a beginner web developer learning HTML, CSS, and JavaScript.</p>
+  </section>
+
+  <section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300x180" alt="To-Do List App">
+      <h3>To-Do List App</h3>
+      <p>A basic task manager built with HTML, CSS, and JavaScript.</p>
+      <a href="#" class="project-btn">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300x180" alt="Portfolio Website">
+      <h3>Portfolio Website</h3>
+      <p>This site, built from scratch as a personal showcase!</p>
+      <a href="#" class="project-btn">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300x180" alt="Gaming Hub Project">
+      <h3>Gaming Hub</h3>
+      <p>A homepage for game lovers, featuring recent releases, platform filters, and a modern layout.</p>
+      <a href="#" class="project-btn">View Project</a>
+    </div>
+
+  </div>
+</section>
+
+
+  
+  
+  </section>
+
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:dominickcadwell756@gmail.com">dominickcadwell756@gmail.com</a></p>
+<a href="resume.pdf" download class="resume-btn">Download Resume</a>
+
+
+  </section>
+
+  <footer><div class="social-links">
+  <a href="https://github.com/DominickCadwell" target="_blank" rel="noopener">
+  <i class="fab fa-github"></i>
+</a>
+
+  <a href="https://www.linkedin.com/in/dominick-cadwell-8a84732a8/" target="_blank"><i class="fab fa-linkedin"></i></a>
+</div>
+
+    <p>© 2025 Your Name. All rights reserved.</p>
+  </footer>
+  <script>
+  const toggle = document.getElementById('dark-mode-toggle');
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+
+</body>
+</html>
+<script>
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 30) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
